@@ -37,6 +37,12 @@
         </div>
       </Cell>
       <Cell v-if="rowData.filepath != null "  class="mynew-ivu-cell">
+        <div>{{rowData}}</div>
+         <div>{{rowData.filepath}}</div>
+
+         <div>{{rowData.ajfilepath}}</div>
+         <div>{{rowData.fileType}}</div>
+
         <div v-if="rowData.ajfilepath != null && rowData.ajfilepath != 'NO' && rowData.filepath != 'NO' && rowData.filetype == 'xlsx' ">
           点击此处下载→
           <a @click.stop="ajexportData" v-if="rowData.ajfilepath != null && rowData.filetype == 'xlsx' ">案卷数据导出</a>
