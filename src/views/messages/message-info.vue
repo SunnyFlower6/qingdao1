@@ -68,7 +68,7 @@
           <span v-if="rowData.filepath != 'N' && rowData.filepath != 'NO' " > 【数据导出未执行】</span>
         </div>
         <div v-else-if="rowData.filetype == 'zip' ">
-          点击此处下载→
+          点击此处下载→   go
           <a @click.stop="exportData" v-if="rowData.filepath != '' ">数据导出</a>
           <span v-if="rowData.filepath == 'N' && rowData.filepath != '' " > 【数据导出已执行】</span>
           <span v-if="rowData.filepath != 'N' && rowData.filepath != '' " > 【数据导出未执行】</span>
