@@ -1,6 +1,7 @@
 <template>
   <LayoutLR title="消息中心" >
     <div class="function-menu" slot="left">
+      <div>{{this.rowData}}</div>
       <div
         class="function-menu-item"
         :class="isSelected(menu.key)"
