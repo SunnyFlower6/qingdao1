@@ -37,11 +37,6 @@
         </div>
       </Cell>
       <Cell v-if="rowData.filepath != null "  class="mynew-ivu-cell">
-        <div>{{rowData}}</div>
-         <div>{{rowData.filepath}}</div>
-
-         <div>{{rowData.ajfilepath}}</div>
-         <div>{{rowData.fileType}}</div>
 
         <div v-if="rowData.ajfilepath != null && rowData.ajfilepath != 'NO' && rowData.filepath != 'NO' && rowData.filetype == 'xlsx' ">
           点击此处下载→
@@ -68,7 +63,7 @@
           <span v-if="rowData.filepath != 'N' && rowData.filepath != 'NO' " > 【数据导出未执行】</span>
         </div>
         <div v-else-if="rowData.filetype == 'zip' ">
-          点击此处下载→   go
+          点击此处下载→
           <a @click.stop="exportData" v-if="rowData.filepath != '' ">数据导出</a>
           <span v-if="rowData.filepath == 'N' && rowData.filepath != '' " > 【数据导出已执行】</span>
           <span v-if="rowData.filepath != 'N' && rowData.filepath != '' " > 【数据导出未执行】</span>
